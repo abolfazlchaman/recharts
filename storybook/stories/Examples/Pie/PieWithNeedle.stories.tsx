@@ -8,9 +8,9 @@ export default {
 
 const RADIAN = Math.PI / 180;
 const data = [
-  { name: 'A', value: 80, color: '#ff0000' },
-  { name: 'B', value: 45, color: '#00ff00' },
-  { name: 'C', value: 25, color: '#0000ff' },
+  { name: 'A', value: 80, color: '#F44336' },
+  { name: 'B', value: 45, color: '#4CAF50' },
+  { name: 'C', value: 25, color: '#2196F3' },
 ];
 const cx = 150;
 const cy = 200;
@@ -61,7 +61,7 @@ export const PieWithNeedle = {
               <Cell key={`cell-${entry.name}`} fill={entry.color} />
             ))}
           </Pie>
-          {needle(value, data, cx, cy, iR, oR, '#d0d000')}
+          {needle(value, data, cx, cy, iR, oR, '#000')}
         </PieChart>
       </ResponsiveContainer>
     );
